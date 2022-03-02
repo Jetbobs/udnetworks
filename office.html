@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <title>udnetworks</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="banner">
+                <img src="estimate/자동상품견적서.jpg" alt="자동견적서">
+            </div>
+        </div>
+        <div class="mainbox">
+            <table style="width: 100%;">
+                <tr>
+                    <td class="s_box" rowspan="2">
+                        step1
+                    </td>
+                    <td
+                        style="background-color: #E4EFEF; color: #191919; font-weight: 500; width: 100%; text-align: left; padding: 10px; font-family: 'Noto Sans KR', sans-serif; font-size: 13px;">
+                        인터넷 어디에 필요하세요 ?
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background-color: #F5F5F5;">
+                        <div class="main_box_img">
+                            <img src="estimate/ico_office.jpg" alt="">
+                            <img src="estimate/매장.jpg" alt="">
+                            <img src="estimate/숙박업.jpg" alt="">
+                            <img src="estimate/가정집.jpg" alt="">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="step">
+            <div class="step_2">
+                <table>
+                    <colgroup>
+                        <col width="10%" />
+                        <col width="35%" />
+                        <col width="55%" />
+                    </colgroup>
+                    <tr>
+                        <td class="a_step">step2</td>
+                        <td class="b_step">인터넷 희망속도는 ?</td>
+                        <td class="c_step">
+                            <div>
+                                <select name="internet_speed" id="internet_speed">
+                                    <option *value*="" *selected*>::인터넷속도선택::</option>
+
+                                    <option *value*="500M+">500M+와이파이</option>
+
+                                    <option *value*="1G+">1G+와이파이</option>
+
+                                    <option *value*="100M">100M</option>
+
+                                    <option *value*="500M">500M</option>
+
+                                    <option *value*="1G">1G</option>
+
+                                    <option *value*="5G">2.5G</option>
+
+                                    <option *value*="5G">5G</option>
+
+                                    <option *value*="10G">10G</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select *name*="pc_per" *id*="pc_per">
+
+                                    <option *value*="">::회선수::</option>
+
+                                    <option *value*="1">1대</option>
+
+                                    <option *value*="2">2대</option>
+
+                                    <option *value*="3">3대</option>
+
+                                    <option *value*="4">4대</option>
+
+                                    <option *value*="5">5대</option>
+
+                                </select>
+                            </div>
+                            <p>PC 무제한 접속</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="step_3">
+                <table>
+                    <colgroup>
+                        <col width="10%" />
+                        <col width="35%" />
+                        <col width="55%" />
+                    </colgroup>
+                    <tr>
+                        <td class="a_step">step3</td>
+                        <td class="b_step">고정IP가 필요하신가요 ?</td>
+                        <td class="c_step">
+                            <div>
+                                <input type="radio" name="internet_ip" value="n" id="r1">
+                                <label for="r1">필요없음</label>
+                                <input type="radio" name="internet_ip" value="y" id="r2">
+                                <label for="r2">필요함</label>
+                            </div>
+                            <div>
+                                <select name="pc_go" id="pc_go">
+
+                                    <option value="">::회선수::</option>
+
+                                    <option value="1">1대</option>
+
+                                    <option value="2">2대</option>
+
+                                    <option value="3">3대</option>
+
+                                    <option value="4">4대</option>
+
+                                    <option value="5">5대</option>
+
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="step_4">
+                <table>
+                    <colgroup>
+                        <col width="10%" />
+                        <col width="35%" />
+                        <col width="55%" />
+                    </colgroup>
+                    <tr>
+                        <td class="a_step">step4</td>
+                        <td class="b_step">TV 필요하신가요 ?</td>
+                        <td class="c_step">
+                            <div>
+                                <select name="tv" id="tv">
+
+                                    <option value="">::필요없음::</option>
+
+                                    <option value="1">BizOTV_베이직_243 ch</option>
+
+                                    <option value="2">BizOTV_라이트_248 ch</option>
+
+                                    <option value="3">BizOTV_에센스_273 ch</option>
+
+                                    <option value="4">BizOTV_슬림_</option>
+
+                                </select>
+                            </div>
+                            <div>
+                                <input type="radio" name="add_tv" value="0" id="tv1">
+                                <label for="tv1">추가TV필요없음</label>
+                                <input type="radio" name="add_tv" value="0" id="tv2">
+                                <label for="tv2">1대 더 필요</label>
+                                <input type="radio" name="add_tv" value="0" id="tv3">
+                                <label for="tv3">2대 더 필요</label>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="step_5">
+                <table>
+                    <colgroup>
+                        <col width="10%" />
+                        <col width="35%" />
+                        <col width="55%" />
+                    </colgroup>
+                    <tr>
+                        <td class="a_step">step5</td>
+                        <td class="b_step">필요한 전화(인터넷전화/유선전화) 대수는?</td>
+                        <td class="c_step">
+                            <div>
+                                <select name="phone_in" id="phone_in">
+
+                                    <option value="">::인터넷전화선택::</option>
+
+                                    <option value="1">IP-4705H_Centrex</option>
+
+                                    <option value="2">IP-4705G_Centrex</option>
+
+                                    <option value="3">IP-700SC</option>
+
+                                    <option value="4">MWP-2500</option>
+
+                                </select>
+                            </div>
+                            <div>
+                                <select name="phone_ea" id="phone_ea">
+                                    <option value="0">::회선수::</option>
+                                    <option value="1">1대
+
+                                    </option>
+                                    <option value="2">2대
+
+                                    </option>
+                                    <option value="3">3대
+
+                                    </option>
+                                    <option value="4">4대
+
+                                    </option>
+                                    <option value="5">5대
+
+                                    </option>
+                                    <option value="6">6대
+
+                                    </option>
+                                    <option value="7">7대
+
+                                    </option>
+                                    <option value="8">8대
+
+                                    </option>
+                                    <option value="9">9대
+
+                                    </option>
+                                    <option value="10">10대
+
+                                    </option>
+                                    <option value="11">11대
+
+                                    </option>
+                                    <option value="12">12대
+
+                                    </option>
+                                    <option value="13">13대
+
+                                    </option>
+                                    <option value="14">14대
+
+                                    </option>
+                                    <option value="15">15대
+
+                                    </option>
+                                    <option value="16">16대
+
+                                    </option>
+                                    <option value="17">17대
+
+                                    </option>
+                                    <option value="18">18대
+
+                                    </option>
+                                    <option value="19">19대
+
+                                    </option>
+                                    <option value="20">20대
+
+                                    </option>
+                                    <option value="21">21대
+
+                                    </option>
+                                    <option value="22">22대
+
+                                    </option>
+                                    <option value="23">23대
+
+                                    </option>
+                                    <option value="24">24대
+
+                                    </option>
+                                    <option value="25">25대
+
+                                    </option>
+                                    <option value="26">26대
+
+                                    </option>
+                                    <option value="27">27대
+
+                                    </option>
+                                    <option value="28">28대
+
+                                    </option>
+                                    <option value="29">29대
+
+                                    </option>
+                                    <option value="30">30대
+
+                                    </option>
+                                    <option value="31">31대
+
+                                    </option>
+                                    <option value="32">32대
+
+                                    </option>
+                                    <option value="33">33대
+
+                                    </option>
+                                    <option value="34">34대
+
+                                    </option>
+                                    <option value="35">35대
+
+                                    </option>
+                                    <option value="36">36대
+
+                                    </option>
+                                    <option value="37">37대
+
+                                    </option>
+                                    <option value="38">38대
+
+                                    </option>
+                                    <option value="39">39대
+
+                                    </option>
+                                    <option value="40">40대
+
+                                    </option>
+                                    <option value="41">41대
+
+                                    </option>
+                                    <option value="42">42대
+
+                                    </option>
+                                    <option value="43">43대
+
+                                    </option>
+                                    <option value="44">44대
+
+                                    </option>
+                                    <option value="45">45대
+
+                                    </option>
+                                    <option value="46">46대
+
+                                    </option>
+                                    <option value="47">47대
+
+                                    </option>
+                                    <option value="48">48대
+
+                                    </option>
+                                    <option value="49">49대
+
+                                    </option>
+                                    <option value="50">50대
+
+                                    </option>
+                                </select>
+                            </div>
+                            <div>
+                                <select name="fax_in" id="fax_in">
+
+                                    <option value="">::유선전화선택::</option>
+
+                                    <option value="1">홈무한3000</option>
+
+                                    <option value="2">소호무한3000</option>
+
+                                    <option value="3">팩스전용</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select name="fax_ea" id="fax_ea">
+                                    <option value="0">::회선수::</option>
+                                    <option value="1">1대
+
+                                    </option>
+                                    <option value="2">2대
+
+                                    </option>
+                                    <option value="3">3대
+
+                                    </option>
+                                    <option value="4">4대
+
+                                    </option>
+                                    <option value="5">5대
+
+                                    </option>
+                                    <option value="6">6대
+
+                                    </option>
+                                    <option value="7">7대
+
+                                    </option>
+                                    <option value="8">8대
+
+                                    </option>
+                                    <option value="9">9대
+
+                                    </option>
+                                    <option value="10">10대
+
+                                    </option>
+                                    <option value="11">11대
+
+                                    </option>
+                                    <option value="12">12대
+
+                                    </option>
+                                    <option value="13">13대
+
+                                    </option>
+                                    <option value="14">14대
+
+                                    </option>
+                                    <option value="15">15대
+
+                                    </option>
+                                    <option value="16">16대
+
+                                    </option>
+                                    <option value="17">17대
+
+                                    </option>
+                                    <option value="18">18대
+
+                                    </option>
+                                    <option value="19">19대
+
+                                    </option>
+                                    <option value="20">20대
+
+                                    </option>
+                                    <option value="21">21대
+
+                                    </option>
+                                    <option value="22">22대
+
+                                    </option>
+                                    <option value="23">23대
+
+                                    </option>
+                                    <option value="24">24대
+
+                                    </option>
+                                    <option value="25">25대
+
+                                    </option>
+                                    <option value="26">26대
+
+                                    </option>
+                                    <option value="27">27대
+
+                                    </option>
+                                    <option value="28">28대
+
+                                    </option>
+                                    <option value="29">29대
+
+                                    </option>
+                                    <option value="30">30대
+
+                                    </option>
+                                    <option value="31">31대
+
+                                    </option>
+                                    <option value="32">32대
+
+                                    </option>
+                                    <option value="33">33대
+
+                                    </option>
+                                    <option value="34">34대
+
+                                    </option>
+                                    <option value="35">35대
+
+                                    </option>
+                                    <option value="36">36대
+
+                                    </option>
+                                    <option value="37">37대
+
+                                    </option>
+                                    <option value="38">38대
+
+                                    </option>
+                                    <option value="39">39대
+
+                                    </option>
+                                    <option value="40">40대
+
+                                    </option>
+                                    <option value="41">41대
+
+                                    </option>
+                                    <option value="42">42대
+
+                                    </option>
+                                    <option value="43">43대
+
+                                    </option>
+                                    <option value="44">44대
+
+                                    </option>
+                                    <option value="45">45대
+
+                                    </option>
+                                    <option value="46">46대
+
+                                    </option>
+                                    <option value="47">47대
+
+                                    </option>
+                                    <option value="48">48대
+
+                                    </option>
+                                    <option value="49">49대
+
+                                    </option>
+                                    <option value="50">50대
+
+                                    </option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="step_6">
+                <div class="step_7">
+                    <table>
+                        <colgroup>
+                            <col width="10%" />
+                            <col width="35%" />
+                            <col width="55%" />
+                        </colgroup>
+                        <tr>
+                            <td class="a_step">step7</td>
+                            <td class="b_step">인터넷 희망속도는 ?</td>
+                            <td class="c_step">
+                                <div>
+                                    <select name="internet_speed" id="internet_speed">
+                                        <option value="" selected>::보안카메라선택::</option>
+                                        <option value="1">GiGAeyes i_slim1대</option>
+                                        <option value="2">GiGAeyes i_slim2대</option>
+                                        <option value="3">GiGAeyes i_slim3대</option>
+                                        <option value="4">GiGAeyes i_slim4대</option>
+                                        <option value="5">GiGAeyes i_slim5대</option>
+                                        <option value="6">GiGAeyes i_slim6대</option>
+                                        <option value="7">GiGAeyes i_slim7대</option>
+                                        <option value="8">GiGAeyes i_slim8대</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="security_camera" value="Y" id="security_camera">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <table>
+                    <colgroup>
+                        <col width="10%" />
+                        <col width="35%" />
+                        <col width="55%" />
+                    </colgroup>
+                    <tr>
+                        <td class="a_step">step6</td>
+                        <td class="b_step">인터넷전화 부가서비스를 선택해주세요.</td>
+                        <td class="c_step">
+                            <div>
+                                <input type="checkbox" name="TEL_V" value="발신번호표시" id="x1">
+                                <label for="x1" title="내 유선전화에 전화를 건 상대방의 번호가 표시되는 서비스 입니다.">필요없음</label>
+                                <input type="checkbox" name="TEL_V" value="통화연결음" id="x2">
+                                <label for="x2" title="발신자가 이용고객에게 전화를 걸었을때 다양한 소리(음악,홍보음,멘트등)를 들려주는 서비스입니다.">통화연결음</label>
+                                <input type="checkbox" name="TEL_V" value="조건별착신전화" id="x3">
+                               <label for="x3" title="시간 별 또는 특정번호로 걸려오는 전화에 대해 착신전환 서비스를 제공합니다.">조건별착신</label>
+                                <input type="checkbox" name="TEL_V" value="ARS" id="x4">
+                                <label for="x4" title="대표번호로 착신된 전화에 대하여 원하는 부서 및 번호를 음성안내로 자동 연결해주는 서비스입니다.">ARS</label>
+                                <input type="checkbox" name="TEL_V" value="원넘버멀티폰" id="x5">
+                                <label for="x5" title="하나의 번호로 여러 단말에 동시 착신/발신이 가능한 서비스입니다.">원넘버멀티폰</label>
+                                <input type="checkbox" name="TEL_V" value="개인통화보안" id="x6">
+                                <label for="x6" title="미리 설정된 비밀번호 입력시 외부로 통화가 가능한 서비스 입니다.">개인통화보안</label>
+                                <input type="checkbox" name="TEL_V" value="오피스100" id="x7">
+                                <label for="x7" title="발신정보명을 상대방에게 표시해 발신자의 신뢰성을 보장해주는 홍보마케팅서비스 (월 300건 통신사별 각100건)">오피스100</label>
+                                <input type="checkbox" name="TEL_V" value="오피스200" id="x8">
+                                <label for="x8" title="발신정보명을 상대방에게 표시해 발신자의 신뢰성을 보장해주는 홍보마케팅서비스 (월 600건 통신사별 각200건)">오피스200</label>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+ 
+        </div>
+    </div>
+</body>
+
+</html>
