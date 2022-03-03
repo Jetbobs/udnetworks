@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <title>udnetworks</title>
+    <style>
+        .a_step {
+            background-color: #EF2878;
+            color: #fff;
+            text-align: center;
+        }
+
+        .b_step {
+            background-color: #F9E8EE;
+        }
+
+        .c_step {
+            background-color: #F5F5F5;
+        }
+
+        .s_box {
+            background-color: #EF2878;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="banner">
+                <img src="estimate/자동상품견적서.jpg" alt="자동견적서">
+            </div>
+        </div>
+        <div class="mainbox">
+            <table style="width: 100%;">
+                <tr>
+                    <td class="s_box" rowspan="2">
+                        step1
+                    </td>
+                    <td
+                        style="background-color: #F9E8EE; color: #191919; font-weight: 500; width: 100%; text-align: left; padding: 10px; font-family: 'Noto Sans KR', sans-serif; font-size: 13px;">
+                        인터넷 어디에 필요하세요 ?
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background-color: #F5F5F5;">
+                        <div class="main_box_img">
+                            <img src="estimate/ico_office.jpg" alt="">
+                            <img src="estimate/매장.jpg" alt="">
+                            <img src="estimate/숙박업.jpg" alt="">
+                            <img src="estimate/가정집.jpg" alt="">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="step">
+            <div class="step_2">
+                <table>
+                    <colgroup>
+                        <col width="10%" />
+                        <col width="35%" />
+                        <col width="55%" />
+                    </colgroup>
+                    <tr>
+                        <td class="a_step">step2</td>
+                        <td class="b_step">
+                            <div>
+                                <span>인터넷 희망속도는 ?</span>
+                                <input type="checkbox" checked value="Y" name="bsn" id="bns">
+                                <label for="bns">사업자로 신청</label>
+                            </div>
+                        </td>
+                        <td class="c_step">
+                            <div>
+                                <select name="internet_speed" id="internet_speed">
+                                    <option *value*="" *selected*>::인터넷속도선택::</option>
+
+                                    <option *value*="100M+">100M+와이파이</option>
+
+                                    <option *value*="500M+">500M+와이파이</option>
+
+                                    <option *value*="1G+">1G+와이파이</option>
+
+                                    <option *value*="100M">100M</option>
+
+                                    <option *value*="500M">500M</option>
+
+                                    <option *value*="1G">1G</option>
+                                </select>
+                                <input type="checkbox" value="Y" id="fmy" name="fmy">
+                                <label for="fmy">패밀리상품으로 신청</label>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="step_3">
+                <table>
+                    <colgroup>
+                        <col width="10%" />
+                        <col width="35%" />
+                        <col width="55%" />
+                    </colgroup>
+                    <tr>
+                        <td class="a_step">step3</td>
+                        <td class="b_step">TV가 필요하신가요 ?</td>
+                        <td class="c_step">
+                            <div>
+                                <select name="tv" id="tv">
+
+                                    <option value="">::필요없음::</option>
+
+                                    <option value="1">OTV(베이직)_243 ch</option>
+
+                                    <option value="2">OTV(라이트)_248 ch</option>
+
+                                    <option value="3">OTV(에센스)_273 ch</option>
+                                </select>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="gini_settop" value="Y" id="gini_settop">
+                                <label for="gini_settop" title="인공지능 기능이 탑재된 말하는 지니셋탑 희망시 체크해주세요.">지니셋탑 희망시 체크</label>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="step_4">
+                <table>
+                    <colgroup>
+                        <col width="10%" />
+                        <col width="35%" />
+                        <col width="55%" />
+                    </colgroup>
+                    <tr>
+                        <td class="a_step">step4</td>
+                        <td class="b_step">추가 TV가 필요하신가요 ?</td>
+                        <td class="c_step">
+                            <div>
+                                <input type="radio" name="add_tv" value="0" id="tv1">
+                                <label for="tv1">추가TV필요없음</label>
+                                <input type="radio" name="add_tv" value="0" id="tv2">
+                                <label for="tv2">1대 더 필요</label>
+                                <input type="radio" name="add_tv" value="0" id="tv3">
+                                <label for="tv3">2대 더 필요</label>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="step_5">
+                <table>
+                    <colgroup>
+                        <col width="10%" />
+                        <col width="35%" />
+                        <col width="55%" />
+                    </colgroup>
+                    <tr>
+                        <td class="a_step">step5</td>
+                        <td class="b_step">유선전화 필요하신가요 ?</td>
+                        <td class="c_step">
+                            <div>
+                                <select name="fax_in" id="fax_in">
+
+                                    <option value="">::요금제선택::</option>
+
+                                    <option value="1">홈무한3000</option>
+
+                                    <option value="2">소호무한3000</option>
+
+                                    <option value="3">팩스전용</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select name="fax_ea" id="fax_ea">
+                                    <option value="0">::회선수::</option>
+                                    <option value="1">1대
+
+                                    </option>
+                                    <option value="2">2대
+
+                                    </option>
+                                    <option value="3">3대
+
+                                    </option>
+                                    <option value="4">4대
+
+                                    </option>
+                                    <option value="5">5대
+
+                                    </option>
+
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="step_6">
+                <table>
+                    <colgroup>
+                        <col width="10%" />
+                        <col width="35%" />
+                        <col width="55%" />
+                    </colgroup>
+                    <tr>
+                        <td class="a_step">step6</td>
+                        <td class="b_step">전화 부가서비스를 선택해주세요.</td>
+                        <td class="c_step">
+                            <div>
+                                <input type="checkbox" name="TEL_V" value="발신번호표시" id="x1">
+                                <label for="x1" title="내 유선전화에 전화를 건 상대방의 번호가 표시되는 서비스 입니다.">발신번호표시</label>
+                                <input type="checkbox" name="TEL_V" value="통화연결음" id="x2">
+                                <label for="x2"
+                                    title="통화중일때 통화중으로 걸리지 않고 통화중 대기상태 서비스입니다.">통화중대기</label>
+                                <input type="checkbox" name="TEL_V" value="조건별착신전화" id="x3">
+                                <label for="x3" title="시간 별 또는 특정번호로 걸려오는 전화에 대해 착신전환 서비스를 제공합니다.">착신통화전환</label>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="step_7">
+                <table>
+                    <colgroup>
+                        <col width="10%" />
+                        <col width="35%" />
+                        <col width="55%" />
+                    </colgroup>
+                    <tr>
+                        <td class="a_step">step7</td>
+                        <td class="b_step">POS 기기 필요하신가요 ?</td>
+                        <td class="c_step">
+                            <div>
+                                <select name="pos" id="pos">
+                                    <option value="" selected>::POS형선택::</option>
+                                    <option value="1">카드단말_SMT-T283</option>
+                                    <option value="2">POS_HIT9</option>
+                                </select>
+                                <span>인터넷 요금 월 <strong style="color: #FF0000;">-3,300원</strong> 추가 할인반영)</span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="step_7">
+                <table>
+                    <colgroup>
+                        <col width="10%" />
+                        <col width="35%" />
+                        <col width="55%" />
+                    </colgroup>
+                    <tr>
+                        <td class="a_step">step7</td>
+                        <td class="b_step">POS 기기 필요하신가요 ?</td>
+                        <td class="c_step">
+                            <div>
+                                <select name="pos" id="pos">
+                                    <option value="" selected>::POS형선택::</option>
+                                    <option value="1">카드단말_SMT-T283</option>
+                                    <option value="2">POS_HIT9</option>
+                                </select>
+                                <span>인터넷 요금 월 <strong style="color: #FF0000;">-3,300원</strong> 추가 할인반영)</span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="step_7">
+                <table>
+                    <colgroup>
+                        <col width="10%" />
+                        <col width="35%" />
+                        <col width="55%" />
+                    </colgroup>
+                    <tr>
+                        <td class="a_step">step7</td>
+                        <td class="b_step">POS 기기 필요하신가요 ?</td>
+                        <td class="c_step">
+                            <div>
+                                <select name="pos" id="pos">
+                                    <option value="" selected>::POS형선택::</option>
+                                    <option value="1">카드단말_SMT-T283</option>
+                                    <option value="2">POS_HIT9</option>
+                                </select>
+                                <span>인터넷 요금 월 <strong style="color: #FF0000;">-3,300원</strong> 추가 할인반영)</span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+</body>
+
+</html>
